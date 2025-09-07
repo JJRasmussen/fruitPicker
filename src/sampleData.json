@@ -1,0 +1,22 @@
+[
+  {
+    "type" : "apple",
+    "color" : "green",
+    "weight" : 100
+  },
+  {
+    "type": "pear",
+    "color" : "green",
+    "weight" : 55
+  },
+  {
+    "type" : "apple",
+    "color" : "yellow",
+    "weight" : 112
+  },
+  {
+    "type" : "apple",
+    "color" : "red",
+    "weight" : 80
+  }
+]
