@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . "/../../src/helperFunctions/fruitPicker.php";
+require __DIR__ . "/../../src/helperFunctions/matchFirst.php";
 
 $mockData = $sampleData = [
     [
@@ -41,7 +41,7 @@ test('Happy case', function () use ($mockData) {
         ]
     ];
 
-    $result = fruitPicker($mockData, $filters);
+    $result = matchFirst($mockData, $filters);
 
     expect($result)->toBeArray();
     expect($result['type'])->toBe('apple');
@@ -65,7 +65,7 @@ test('No valid items', function () use ($mockData) {
         ]
     ];
     
-    $result = fruitPicker($mockData, $filters);
+    $result = matchFirst($mockData, $filters);
     
     expect($result)-> toBeNull();
 });

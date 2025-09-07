@@ -1,6 +1,6 @@
 <?php
 
-function fruitPicker($fruits, $filters){
+function matchFirst($fruits, $filters){
     
     foreach($fruits as $fruit){
         $match = true;
