@@ -32,3 +32,13 @@ test('Happy path with three key filters', function ()  {
     expect($parsedExpression[2]['operator'])->toBe('<=');
     expect($parsedExpression[2]['value'])->toBe(110);
 });
+
+test('Case insensitivity', function () {    
+    $expression = 'TyPe = PeaR';
+    
+    $parsedExpression = parseExpression($expression);
+
+    expect($parsedExpression)->toBeArray();
+    expect($parsedExpression[0]['key'])->toBe('type');
+    expect($parsedExpression[0]['value'])->toBe('pear');
+});

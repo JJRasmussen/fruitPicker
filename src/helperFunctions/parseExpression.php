@@ -9,9 +9,9 @@ function parseExpression($expression){
         $expression = trim($expression);
 
         if(preg_match('/^(\w+)\s*(=|<=|>=|<|>)\s*(.+)$/', $expression, $matches)){
-            $key = $matches[1];
+            $key = strtolower($matches[1]);
             $operator = $matches[2];
-            $value = $matches[3];
+            $value = strtolower($matches[3]);
 
             if(is_numeric($value)){
                 $value = (int)$value;
