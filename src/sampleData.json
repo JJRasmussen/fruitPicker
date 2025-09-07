@@ -7,7 +7,7 @@
   {
     "type": "pear",
     "color" : "green",
-    "weight" : 55
+    "weight" : 75
   },
   {
     "type" : "apple",
@@ -18,5 +18,10 @@
     "type" : "apple",
     "color" : "red",
     "weight" : 80
+  },
+  {
+    "type" : "pear",
+    "color" : "yellow",
+    "weight" : 105
   }
 ]

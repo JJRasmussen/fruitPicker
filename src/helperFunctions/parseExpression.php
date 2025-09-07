@@ -12,7 +12,7 @@ function parseExpression($expression){
             $key = strtolower($matches[1]);
             $operator = $matches[2];
             $value = strtolower($matches[3]);
-
+            
             if(is_numeric($value)){
                 $value = (int)$value;
             };
@@ -24,7 +24,5 @@ function parseExpression($expression){
             ];
         };
     };
-
-
     return $filters;
-    }
+};

@@ -27,7 +27,7 @@ $mockData = $sampleData = [
 
 
 
-test('Happy case', function () use ($mockData) {    
+test('Happy path', function () use ($mockData) {    
     $filters = [
         [
             "key" => "type",

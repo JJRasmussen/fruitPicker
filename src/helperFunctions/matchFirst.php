@@ -1,7 +1,7 @@
 <?php
 
 function matchFirst($fruits, $filters){
-    
+
     foreach($fruits as $fruit){
         $match = true;
 
