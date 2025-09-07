@@ -1,0 +1,22 @@
+{
+    "name": "juul/fruit-picker",
+    "autoload": {
+        "psr-4": {
+            "Juul\\FruitPicker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JJRasmussen",
+            "email": "123456789+jeppe-juul@hotmail.com"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^4.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
