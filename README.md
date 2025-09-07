@@ -51,12 +51,12 @@ The main three functions were tested using Pest.
 ## dataLoaderTest.php
 tests that JSON data is successfully loaded into an associative array with expected keys.
 
-## matchFirst()
+## matchFirstTest.php
 Happy path tested where filters match the first valid fruit.
 
 Case where no fruit matches the filters and null is returned.
 
-## parseExpression()
+## parseExpressionTest.php
 Happy path tested where a single expression is turned into key/operator/value filter.
 
 Handles creation of multiple filters joined with " and ".
